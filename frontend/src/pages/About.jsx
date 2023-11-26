@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar"
 
 const About = () => {
   return (
-    <div>
-        <div className="bg-black h-fit w-screen flex justify-center items-center">
+    <div className="max-w-screen">
+        <div className="bg-black h-fit w-screen flex justify-between items-center">
              <Navbar/>
         </div>
        
@@ -12,16 +12,16 @@ const About = () => {
         {/* TITLE */}
         <div className="text-center mt-4">
             <h1 className="font-bold">About Us</h1>
-            <p>Welcome to Crescoin – where innovation meets global connectivity in financial transactions.</p>
+            <p className="my-2">Welcome to Crescoin – where innovation meets global connectivity in financial transactions.</p>
         </div>
 
 
         {/* BODY */}
-        <div className="flex">
+        <div className="flex justify-between items-center p-4">
 
 
             {/* TEXT */}
-            <div>
+            <div className="w-[50%]">
                 <div>
                       <p>At Crescoin, we are passionate about revolutionizing the way people send money across borders. Our platform was born from the vision of creating a seamless solution for individuals worldwide to connect and transfer funds securely and effortlessly.</p>
 
@@ -48,10 +48,18 @@ const About = () => {
 
 
             {/* IMAGE */}
-            <div>
-                <img src="/About.png" alt="" />
+            <div className="w-[50%] flex justify-center items-center">
+                <img src="/About.png" alt="" className="w-[30rem]"/>
             </div>
 
+        </div>
+
+
+        <div>
+        
+            <h1 className="font-bold text-center">About Us</h1>
+            <p className="my-2">Welcome to Crescoin – where innovation meets global connectivity in financial transactions.</p>
+       
         </div>
     </div>
   )
