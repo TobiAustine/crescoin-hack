@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <div className="w-[80%] m-auto flex items-center justify-between text-white pt-2">
+    <div className="w-[80%] m-auto flex items-center justify-between text-white pt-2" >
         
         {/* LOGO */}
         <Link to='/'> <img src="/logo.png" alt="" /></Link>
